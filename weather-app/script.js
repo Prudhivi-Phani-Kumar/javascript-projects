@@ -2,7 +2,7 @@ const searchInput = document.querySelector(".search input");
 const searchButton = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
-const getWeatherData = async (cityName = "visakhapatnam") => {
+const getWeatherData = async (cityName) => {
   const apiKey = "75faca06ed1cef475fcdf1ea86945ec7";
   const weatherUrl =
     "https://api.openweathermap.org/data/2.5/weather?units=metric";
