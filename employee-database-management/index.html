@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>Employee Database</div>
+        <button class="create-employee">Add Employee</button>
+    </header>
+    <section>
+        <div class="list-wrapper">
+            <div class="title">Employees List</div>
+            <div class="employee-list"></div>
+        </div>
+        <div class="info-wrapper">
+            <div class="title">Employee Info</div>
+            <div class="employee-info"></div>
+        </div>
+    </section>
+    <div class="addEmployee">
+        <form class="create">
+          Add a new Employee
+          <div>
+            <input type="text" name="firstName" placeholder="First Name" required/>
+            <input type="text" name="lastName" placeholder="Last Name" required/>
+          </div>
+          <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+          <input type="email" name="email" placeholder="Email" required/>
+          <input type="number" name="contactNumber" placeholder="Contact" required/>
+          <input type="number" name="salary" placeholder="Salary" required/>
+          <input type="text" name="address" placeholder="Address" required/>
+          <input type="date" name="dob" placeholder="Date of Birth" class="dob" required/>
+          <input type="submit" class="submit" value="Submit">
+        </form>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
